@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace RSPL.Data
 {
-    interface ILanguageble
+    public class Region
     {
-        byte Persent { get; set; }
-        Year Year  { get; set; }
-        Region Region { get; set; }
+        public string Id { get; set; }
     }
 }

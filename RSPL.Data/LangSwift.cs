@@ -9,7 +9,7 @@ namespace RSPL.Data
     public class LangSwift : ILanguageble
     {
         public byte Persent { get; set; }
-        public ushort Year { get; set; }
-        public string Region { get; set; }
+        public Year Year { get; set; }
+        public Region Region { get; set; }
     }
 }

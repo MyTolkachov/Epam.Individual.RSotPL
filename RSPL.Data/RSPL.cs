@@ -1,15 +1,14 @@
 namespace RSPL.Data
 {
-    using System;
     using System.Data.Entity;
-    using System.Linq;
 
-    public class Rspl : DbContext
+    public partial class Rspl : DbContext
     {
         public Rspl()
             : base("name=RSPL.Model")
         {
         }
+        
 
         public virtual DbSet<LangCPlus> CPluses { get; set; }
         public virtual DbSet<LangCSharp> CSharps { get; set; }
