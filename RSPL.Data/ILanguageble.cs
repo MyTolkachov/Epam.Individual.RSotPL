@@ -10,6 +10,6 @@ namespace RSPL.Data
     {
         byte Persent { get; set; }
         ushort Year  { get; set; }
-        string Country { get; set; }
+        string Region { get; set; }
     }
 }
