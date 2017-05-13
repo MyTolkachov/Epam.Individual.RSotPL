@@ -17,10 +17,10 @@ namespace RSPL.UI
             using (Rspl db = new Rspl())
             {
                 ILanguageble CSharp = new LangCSharp
-                { Persent = 22, Region = new Region("USA",1), Year = new Year(2005) };
+                { Persent = 22, Region = Region.Europe, Year = Year.y2010 };
 
                 ILanguageble Java = new LangJAVA()
-                { Persent = 22, Region = new Region("USA",2), Year = new Year(2005) };
+                { Persent = 22, Region = Region.Ukraine, Year = Year.y2011 };
 
                 db.CSharps.Add((LangCSharp)CSharp);
                 db.Javas.Add((LangJAVA)Java);

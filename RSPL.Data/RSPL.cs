@@ -17,8 +17,5 @@ namespace RSPL.Data
         public virtual DbSet<LangPyton> Pytons { get; set; }
         public virtual DbSet<LangRuby> Rubies { get; set; }
         public virtual DbSet<LangSwift> Swifts { get; set; }
-
-        public virtual DbSet<Region> Regions { get; set; }
-        public virtual DbSet<Year> Years { get; set; }
     }
 }

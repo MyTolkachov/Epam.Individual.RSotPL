@@ -1,22 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RSPL.Data
+﻿namespace RSPL.Data
 {
-    [Table("Years")]
-    public class Year
+    public enum Year : short
     {
-        [Key]
-        public int Id { get; set; }
-
-        public Year(int year)
-        {
-            Id = year;
-        }
+        y2010 = 2010,
+        y2011 = 2011,
+        y2012 = 2012,
+        y2013 = 2013,
+        y2014 = 2014,
+        y2015 = 2015,
+        y2016 = 2016,
+        y2017 = 2017,
     }
 }
