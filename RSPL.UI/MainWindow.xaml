@@ -1,12 +1,36 @@
-﻿<Window x:Class="RSPL.UI.MainWindow"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RSPL.UI"
+        xmlns:Wpf="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf" x:Name="MainWindow1" x:Class="RSPL.UI.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
+        Title="MainWindow" Height="600" Width="1000">
+    
+    <Grid Margin="0,4,0,-6">
+
+        <Wpf:CartesianChart x:Name="CC" HorizontalAlignment="Left" Height="380" Margin="10,0,10,10" VerticalAlignment="Top" Width="970">
+            <Wpf:CartesianChart.Series>
+                <Wpf:LineSeries Title="C#"/>
+            </Wpf:CartesianChart.Series>
+        </Wpf:CartesianChart>
+
+        <CheckBox x:Name="CheckJS" Content="JS" HorizontalAlignment="Left" Margin="820,392,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CheckRuby" Content="Ruby" HorizontalAlignment="Left" Margin="720,390,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CheckSwift" Content="Swift" HorizontalAlignment="Left" Margin="620,390,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CheckPyton" Content="Pyton" HorizontalAlignment="Left" Margin="520,390,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CheckPHP" Content="PHP" HorizontalAlignment="Left" Margin="420,390,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CheckCPlus" Content="C++" HorizontalAlignment="Left" Margin="320,390,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CheckJava" Content="Java" HorizontalAlignment="Left" Margin="220,390,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="CheckCSharp" Content="C#" HorizontalAlignment="Left" Margin="120,392,0,0"  VerticalAlignment="Top"/>
+
+        <RadioButton x:Name="RadioUA" Content="Ukraine" HorizontalAlignment="Left" Margin="300,420,0,0" VerticalAlignment="Top" GroupName="GRegion" />
+        <RadioButton x:Name="RadioEU" Content="Europe" HorizontalAlignment="Left" Margin="400,420,0,0" VerticalAlignment="Top" GroupName="GRegion" />
+        <RadioButton x:Name="RadioUSA" Content="USA" HorizontalAlignment="Left" Margin="500,420,0,0" VerticalAlignment="Top" GroupName="GRegion" />
+        <RadioButton x:Name="RadioAll" Content="All" HorizontalAlignment="Left" Margin="600,420,0,0" VerticalAlignment="Top" GroupName="GRegion" />
         
+        <Button Content="Show" HorizontalAlignment="Left" Margin="436,504,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
     </Grid>
 </Window>
