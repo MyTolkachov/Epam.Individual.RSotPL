@@ -1,7 +1,7 @@
 ﻿namespace RSPL.Data
 {
     public enum Year : short
-    {
+    { //Enum name does not match naming rules. Seggested name is "Y2010"
         y2010 = 2010,
         y2011 = 2011,
         y2012 = 2012,
