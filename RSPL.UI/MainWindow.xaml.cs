@@ -4,6 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
+//There is no such library in project
 using LiveCharts.Wpf;
 using RSPL.Data;
 
@@ -25,6 +26,7 @@ namespace RSPL.UI
                                    where item.Region == (Region)region
                                    select item;
 
+// Lists are updated but never used
                 List<byte> Procent = new List<byte>(); 
                 List<short> Years = new List<short>();
 
