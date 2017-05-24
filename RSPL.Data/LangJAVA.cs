@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace RSPL.Data
 {
     [Table("Java")]
+    //Review BA : Class name "LangJAVA" does not match naming rules. Suggested name is "LangJava" 
     public class LangJAVA : ILanguageble
     {
         public int Id { get; set; }
