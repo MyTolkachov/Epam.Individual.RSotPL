@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace RSPL.Data
 {
     [Table("PHP")]
+    //Review BA : Class name "LangPHP" does not match naming rules. Suggested name is "LangPhp"
     public class LangPHP : ILanguageble
     {
         public int Id { get; set; }
